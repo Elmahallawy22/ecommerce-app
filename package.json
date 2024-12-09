@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "next": "15.0.4",
+    "next-intl": "^3.26.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.82.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
