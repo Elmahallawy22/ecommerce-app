@@ -1,0 +1,22 @@
+.navbar-lng {
+  ul {
+    li {
+      font-size: 12px;
+    }
+
+    .line {
+      border: 1px solid #f2da5e;
+      height: 13px;
+      width: 0px;
+    }
+
+    .active {
+      color: #ff3b00;
+    }
+  }
+
+  h6 {
+    font-size: 14px;
+    color: #ff3b00;
+  }
+}
