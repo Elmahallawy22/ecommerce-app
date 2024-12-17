@@ -1,6 +1,9 @@
 {
-  "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+  "Header": {
+    "offer": "20% discount on the first order",
+    "search":"What are you looking for?",
+    "login":"Login",
+    "wishlist":"Wishlist",
+    "cart":"Cart"
   }
 }

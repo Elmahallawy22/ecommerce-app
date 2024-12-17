@@ -1,0 +1,48 @@
+.nav-categories {
+  p {
+    font-weight: 600;
+    text-decoration: underline;
+    min-width: fit-content;
+  }
+
+  ul {
+    overflow-x: auto;
+    display: flex;
+    padding: 6px 0px;
+
+    li {
+      min-width: fit-content;
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .nav-categories {
+    padding: 0px 4px;
+    p {
+      font-size: 14px;
+    }
+    
+    ul {  
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.nav-categories ul::-webkit-scrollbar {
+  height: 2px;
+}
+
+.nav-categories ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.nav-categories ul::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+.nav-categories ul::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}

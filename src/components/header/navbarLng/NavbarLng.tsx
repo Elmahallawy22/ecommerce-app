@@ -3,14 +3,18 @@ import "./NavbarLng.scss";
 import React, { useState, useEffect } from 'react';
 import { useRouter, usePathname } from "next/navigation";
 
-const NavbarLng = () => {
+type NavbarLngParams = {
+  offer: string;
+}
+
+const NavbarLng = ({ offer }: NavbarLngParams) => {
   const router = useRouter();
   const currentPath = usePathname();
   const [lngValue, setLngValue] = useState<string>("");
 
   const convertLanguage = (value: string): void =>
     router.push("/" + value + currentPath.slice(3));
-    
+
   useEffect(() => {
     if (currentPath.slice(0, 3) === "/ar") {
       document.body.dir = "rtl";
@@ -23,7 +27,7 @@ const NavbarLng = () => {
   }, []);
 
   return (
-    <div className="navbar-lng flex justify-center h-7">
+    <div className="navbar-lng flex justify-center h-7 px-[2px]">
       <div className="container flex justify-between items-center">
         <ul className="flex items-center gap-2">
           <li className={`${lngValue === "en" && "active"}`}>
@@ -36,7 +40,7 @@ const NavbarLng = () => {
             >العربية</button>
           </li>
         </ul>
-        <h6>خصم 20% علي اول طلبية</h6>
+        <h6>{offer}</h6>
       </div>
     </div>
   )
