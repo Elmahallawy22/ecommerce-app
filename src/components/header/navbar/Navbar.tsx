@@ -1,4 +1,3 @@
-
 import './Navbar.scss';
 import "flag-icon-css/css/flag-icon.min.css";
 import { Link } from '../../../i18n/routing';

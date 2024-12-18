@@ -1,9 +1,22 @@
 {
   "Header": {
     "offer": "20% discount on the first order",
-    "search":"What are you looking for?",
-    "login":"Login",
-    "wishlist":"Wishlist",
-    "cart":"Cart"
+    "search": "What are you looking for?",
+    "login": "Login",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "all_categories": "All Categories List",
+    "women": "Women",
+    "men": "Men",
+    "children": "Children and Games",
+    "beauty": "Beauty and Perfumes",
+    "sports": "Sports",
+    "home": "The Home",
+    "electronics": "Electronics",
+    "shoes": "Shoes",
+    "bags": "Bags",
+    "brands": "Brands",
+    "premium": "Premium",
+    "newly": "Newly Arrived"
   }
 }

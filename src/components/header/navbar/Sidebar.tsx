@@ -4,7 +4,7 @@ import Image from 'next/image';
 import MenuIcon from './assets/menu.png';
 import CloseIcon from './assets/close.png';
 import UserIcon from "./assets/user.svg";
-import HeartIcon from "./assets/Heart.svg";
+import HeartIcon from "./assets/heart.png";
 import CartIcon from "./assets/cart.svg";
 import { Link } from '../../../i18n/routing';
 import { usePathname } from 'next/navigation';
@@ -18,7 +18,6 @@ type SidebarParams = {
 const Sidebar = ({ login, wishlist, cart }: SidebarParams) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const currentPath = usePathname();
-
   const convertShowMenu = () => {
     setShowMenu(true);
   }
