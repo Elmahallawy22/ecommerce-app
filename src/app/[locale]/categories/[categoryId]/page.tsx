@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Category = ({ params }: { params: { categoryId: string } }) => {
+const Category = () => {
   return (
-    <h1 className=' text-5xl'>{params.categoryId}</h1>
+    <h1 className=' text-5xl'>category</h1>
   )
 }
 
