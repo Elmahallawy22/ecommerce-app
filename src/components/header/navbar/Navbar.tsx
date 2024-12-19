@@ -14,9 +14,9 @@ type NavbarParams = {
 const Navbar = ({ search, login, wishlist, cart }: NavbarParams) => {
   return (
     <nav className='navbar flex justify-center py-1 md:py-[10px] px-1'>
-      <div className="container flex justify-between items-center gap-2 md:gap-4">
+      <div className="container flex justify-between items-center gap-1 sm:gap-2 md:gap-4">
         <Link href={'/'}><Logo /></Link>
-        <div className="search flex justify-between items-center px-3 flex-grow gap-2">
+        <div className="search flex justify-between items-center px-1 sm:px-3 flex-grow gap-2">
           <input
             type="text"
             placeholder={search}
