@@ -35,7 +35,6 @@ const Sidebar = ({ login, wishlist, cart }: SidebarParams) => {
         <Image
           src={MenuIcon}
           alt='menu-icon'
-          width={48}
         />
       </button>
       {showMenu &&
