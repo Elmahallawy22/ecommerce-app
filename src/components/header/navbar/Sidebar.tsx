@@ -18,17 +18,24 @@ type SidebarParams = {
 const Sidebar = ({ login, wishlist, cart }: SidebarParams) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const currentPath = usePathname();
-  const convertShowMenu = () => {
+
+  const menuIconClicked = () => {
     setShowMenu(true);
+    document.body.style.overflow = 'hidden';
+  }
+
+  const menuIconUnclicked = () => {
+    setShowMenu(false);
+    document.body.style.overflow = 'auto';
   }
 
   return (
     <div className='sidebar md:hidden'>
-      <button onClick={convertShowMenu}>
+      <button onClick={menuIconClicked}>
         <Image
           src={MenuIcon}
           alt='menu-icon'
-          width={32}
+          width={48}
         />
       </button>
       {showMenu &&
@@ -36,7 +43,7 @@ const Sidebar = ({ login, wishlist, cart }: SidebarParams) => {
           <div className="sidebar-list right-0">
             <button
               className={`close ${currentPath.slice(0, 3) === "/ar" ? 'right-8' : 'left-8'}`}
-              onClick={() => { setShowMenu(false) }}
+              onClick={menuIconUnclicked}
             >
               <Image
                 src={CloseIcon}
@@ -46,19 +53,19 @@ const Sidebar = ({ login, wishlist, cart }: SidebarParams) => {
             </button>
             <ul>
               <li>
-                <Link href={'/login'} onClick={() => { setShowMenu(false) }}>
+                <Link href={'/login'} onClick={menuIconUnclicked}>
                   {login}
                   <Image src={UserIcon} alt='user-icon' />
                 </Link>
               </li>
               <li>
-                <Link href={'/wishlist'} onClick={() => { setShowMenu(false) }}>
+                <Link href={'/wishlist'} onClick={menuIconUnclicked}>
                   {wishlist}
                   <Image src={HeartIcon} alt='heart-icon' />
                 </Link>
               </li>
               <li>
-                <Link href={'/cart'} onClick={() => { setShowMenu(false) }}>
+                <Link href={'/cart'} onClick={menuIconUnclicked}>
                   {cart}
                   <Image src={CartIcon} alt='cart-icon' />
                 </Link>
