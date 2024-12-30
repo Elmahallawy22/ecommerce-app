@@ -1,0 +1,28 @@
+.banner {
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: 67px;
+    background: #efefef;
+    overflow: hidden;
+
+    img {
+      height: 32px;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .banner {
+    .logos {
+      gap: 8px;
+      height: 48px;
+
+      img {
+        height: 20px;
+      }
+    }
+  }
+}

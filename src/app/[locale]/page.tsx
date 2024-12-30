@@ -1,55 +1,9 @@
+import Banner from "../../components/Banner/Banner";
+
 export default function HomePage() {
   return (
-    <div>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
-      <p>Home</p>
+    <div className="py-2 sm:py-4 md:py-5 lg:py-8">
+      <Banner />
     </div>
   );
-  <p>Home</p>
 }

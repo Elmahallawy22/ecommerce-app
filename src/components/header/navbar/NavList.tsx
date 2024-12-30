@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from "../../../i18n/routing"
 import { usePathname, useRouter } from 'next/navigation';
 import Image from "next/image"; 
-import UserIcon from "./assets/user.svg";
+import UserIcon from "./assets/user.png";
 import HeartIcon from "./assets/heart.png";
-import CartIcon from "./assets/cart.svg";
+import CartIcon from "./assets/cart.png";
 
 const languages = [
   {
@@ -59,19 +59,19 @@ const NavList = ({ login, wishlist, cart }: NavListParams) => {
       <li>
         <Link href={'/login'}>
           {login}
-          <Image src={UserIcon} alt='user-icon' />
+          <Image src={UserIcon} alt='user-icon' loading="lazy" />
         </Link>
       </li>
       <li>
         <Link href={'/wishlist'}>
           {wishlist}
-          <Image src={HeartIcon} alt='heart-icon' />
+          <Image src={HeartIcon} alt='heart-icon' loading="lazy" />
         </Link>
       </li>
       <li>
         <Link href={'/cart'}>
           {cart}
-          <Image src={CartIcon} alt='cart-icon' />
+          <Image src={CartIcon} alt='cart-icon' loading="lazy" />
         </Link>
       </li>
       <li className='country'>
