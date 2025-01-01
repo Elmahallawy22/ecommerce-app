@@ -1,22 +1,22 @@
 import React from 'react';
 import "./Banner.scss";
 import Image from 'next/image';
-import Hero from "./assets/Hero.png";
-import Adidas from "./assets/adidas.png";
-import Defacto from "./assets/defacto.png";
-import Guess from "./assets/guess.png";
-import Lacoste from "./assets/lacoste.png";
-import Mango from "./assets/mango.png";
-import Zara from "./assets/Zara.png";
-import CalvinKlein from "./assets/CalvinKlein.png";
-import AmericanEagle from "./assets/AmericanEagle.png";
-import HugoBoss from "./assets/HugoBoss.png";
-import MassimoDutti from "./assets/MassimoDutti.png";
-import Nike from "./assets/Nike.png";
-import Puma from "./assets/Puma.png";
-import RalphLauren from "./assets/RalphLauren.png";
-import Reebok from "./assets/Reebok.png";
-import UnderArmour from "./assets/UnderArmour.png";
+import Hero from "../assets/Hero.png";
+import Adidas from "../assets/Adidas.png";
+import Defacto from "../assets/Defacto.png";
+import Guess from "../assets/Guess.png";
+import Lacoste from "../assets/lacoste.png";
+import Mango from "../assets/Mango.png";
+import Zara from "../assets/Zara.png";
+import CalvinKlein from "../assets/CalvinKlein.png";
+import AmericanEagle from "../assets/AmericanEagle.png";
+import HugoBoss from "../assets/HugoBoss.png";
+import MassimoDutti from "../assets/MassimoDutti.png";
+import Nike from "../assets/Nike.png";
+import Puma from "../assets/Puma.png";
+import RalphLauren from "../assets/RalphLauren.png";
+import Reebok from "../assets/Reebok.png";
+import UnderArmour from "../assets/UnderArmour.png";
 
 const Banner = () => {
   return (
@@ -45,4 +45,4 @@ const Banner = () => {
   )
 }
 
-export default Banner
+export default Banner;
