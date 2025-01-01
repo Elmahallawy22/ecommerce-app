@@ -3,16 +3,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 32px;
     height: 67px;
+    max-width: 1536px;
     background: #efefef;
-    overflow: hidden;
+    padding: 0px 8px;
+    overflow: auto;
 
     img {
       height: 32px;
     }
   }
 }
+
+.banner .logos::-webkit-scrollbar {
+  height: 2px;
+}
+
+.banner .logos::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.banner .logos::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.banner .logos::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb;
+}
+
 
 @media (max-width:768px) {
   .banner {
