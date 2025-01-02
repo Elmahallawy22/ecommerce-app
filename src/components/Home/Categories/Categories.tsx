@@ -34,9 +34,9 @@ const Categories = () => {
           {categoriesList.map((category) => {
             return (
               <li key={category.id}>
-                <Image src={category.image} alt={`${category.image}`} loading="lazy" />
                 <Link href={`/categories/${category.item}`}>
-                  {t(category.item)}
+                  <Image src={category.image} alt={`${category.image}`} loading="lazy" />
+                  <span> {t(category.item)} </span>
                 </Link>
               </li>
             )
