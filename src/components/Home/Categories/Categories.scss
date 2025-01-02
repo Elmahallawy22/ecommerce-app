@@ -31,7 +31,10 @@
     ul {
       li {
         img {
-          width: 80px !important;
+          min-width: 96px !important;
+          min-height: 96px !important;
+          max-width: 96px !important;
+          max-height: 96px !important;
         }
       }
     }
@@ -45,10 +48,10 @@
 
       li {
         img {
-          min-width: 64px !important;
-          min-height: 64px !important;
-          max-width: 64px !important;
-          max-height: 64px !important;
+          min-width: 80px !important;
+          min-height: 80px !important;
+          max-width: 80px !important;
+          max-height: 80px !important;
         }
 
         a {
