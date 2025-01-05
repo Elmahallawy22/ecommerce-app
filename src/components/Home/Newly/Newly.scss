@@ -1,0 +1,19 @@
+.newly {
+  overflow-x: hidden;
+
+  .images {
+    gap: 4px;
+
+    img {
+      max-height: 360px;
+    }
+
+    .quarter {
+      width: 25vw !important;
+    }
+
+    .half {
+      width: 50vw !important;
+    }
+  }
+}

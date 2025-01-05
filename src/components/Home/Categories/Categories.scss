@@ -28,15 +28,11 @@
 
 @media (max-width:1024px) {
   .categories {
-    ul {
-      li {
-        img {
-          min-width: 96px !important;
-          min-height: 96px !important;
-          max-width: 96px !important;
-          max-height: 96px !important;
-        }
-      }
+    img {
+      min-width: 96px !important;
+      min-height: 96px !important;
+      max-width: 96px !important;
+      max-height: 96px !important;
     }
   }
 }
@@ -48,10 +44,10 @@
 
       li {
         img {
-          min-width: 80px !important;
-          min-height: 80px !important;
-          max-width: 80px !important;
-          max-height: 80px !important;
+          min-width: 72PX !important;
+          min-height: 72PX !important;
+          max-width: 72PX !important;
+          max-height: 72PX !important;
         }
 
         a {
