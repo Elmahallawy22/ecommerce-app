@@ -34,7 +34,7 @@ const FlashStyle = () => {
               1600: { slidesPerView: 4.4 },
               1750: { slidesPerView: 5 },
             }}
-            loop={true}
+            // loop={true}
             navigation={true}
             modules={[Navigation]}
             className="mySwiper flex"
