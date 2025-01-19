@@ -6,7 +6,11 @@ import Image from 'next/image';
 import ArrowR from "../assets/ArrowR.png";
 import ArrowL from "../assets/ArrowL.png";
 
-const SectionTitele = () => {
+type SectionTitelePrams = {
+  title: string;
+  path: string;
+}
+const SectionTitele = (props: SectionTitelePrams) => {
   const [lngValue, setLngValue] = useState<string>("");
 
   useEffect(() => {
@@ -19,12 +23,18 @@ const SectionTitele = () => {
   return (
     <div className="section-title flex justify-center mb-1 md:mb-2 lg:mb-3">
       <div className="container flex justify-between items-center">
-        <h2>وصل حدثا</h2>
-        <Link href={'/'} className='flex items-center gap-[2px] text-sm md:text-base'>
-          شاهد المزيد
-          {lngValue === "rtl"
-            ? <Image src={ArrowR} alt="arrow-right" />
-            : <Image src={ArrowL} alt="arrow-left" />
+        <h2>{props.title}</h2>
+        <Link href={`/${props.path}`} className='flex items-center text-sm md:text-base'>
+          {lngValue === "rtl" ?
+            <>
+              شاهد المزيد
+              <Image src={ArrowR} alt="arrow-right" />
+            </>
+            :
+            <>
+              Show More
+              <Image src={ArrowL} alt="arrow-left" />
+            </>
           }
         </Link>
       </div>

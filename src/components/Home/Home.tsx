@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './Banner/Banner'
 import Categories from './Categories/Categories'
 import Newly from './Newly/Newly'
+import FlashStyle from './FlashStyle/FlashStyle'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <Categories />
       <Newly />
+      <FlashStyle />
     </section>
   )
 }

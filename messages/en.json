@@ -28,5 +28,11 @@
     "brands": "Brands",
     "mobiles": "Mobiles",
     "offers": "Offers"
+  },
+  "NewArrival": {
+    "title": "New arrival"
+  },
+  "FlashStyle": {
+    "title": "Flash Style"
   }
 }

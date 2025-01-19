@@ -28,5 +28,11 @@
     "mobiles": "الموبايلات",
     "brands": "ماركات",
     "offers": "العروض"
+  },
+  "NewArrival": {
+    "title": "وصل حديثا"
+  },
+  "FlashStyle": {
+    "title": "الفلاش سايل"
   }
 }
