@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import "./FlashStyle.scss";
 import { useTranslations } from 'next-intl';
+import Axios from 'axios';
 import Image from 'next/image';
 import SidebarImg from "../assets/SidebarImg.png";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,8 +11,6 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import SectionTitele from '../SectionTitele/SectionTitele';
 import Card from '../../Card/Card';
-import Product from '../../Card/assets/product.png';
-import Axios from 'axios';
 
 const FlashStyle = () => {
   const t = useTranslations("FlashStyle");
@@ -26,11 +25,11 @@ const FlashStyle = () => {
       console.log(err.message);
     }
   }
-  const getHalfProducts = products.length / 2;
 
   useEffect(() => {
     getAllProducts();
-  }, [])
+  }, []);
+
   return (
     <div className='flash-style '>
       <SectionTitele title={t('title')} path="flash-style" />
@@ -41,8 +40,8 @@ const FlashStyle = () => {
             slidesPerView={1.35}
             spaceBetween={20}
             breakpoints={{
-              380: { slidesPerView: 1.6 },
-              400: { slidesPerView: 1.7 },
+              380: { slidesPerView: 1.7 },
+              400: { slidesPerView: 1.8 },
               480: { slidesPerView: 2 },
               540: { slidesPerView: 2.2 },
               640: { slidesPerView: 2.6 },
@@ -82,7 +81,7 @@ const FlashStyle = () => {
                     }
                   })}
                   {products.map((item) => {
-                    if (item.id === index + ((products.length ) / 2)) {
+                    if (item.id === index + ((products.length) / 2)) {
                       return (
                         <div key={item.id}>
                           <Card
