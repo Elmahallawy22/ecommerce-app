@@ -37,7 +37,7 @@ const FlashStyle = () => {
         <Image src={SidebarImg} alt='sidebar-img' className='hidden lg:block w-1/4' />
         <div className="bg-[#f5f5f5] flex-grow w-1/2 px-2 md:px-4 xl:px-6">
           <Swiper
-            slidesPerView={1.35}
+            slidesPerView={1.5}
             spaceBetween={20}
             breakpoints={{
               380: { slidesPerView: 1.7 },

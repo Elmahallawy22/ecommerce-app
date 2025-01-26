@@ -21,7 +21,7 @@ const SectionTitele = (props: SectionTitelePrams) => {
   }, []);
 
   return (
-    <div className="section-title flex justify-center mb-1 md:mb-2 lg:mb-3">
+    <div className="section-title flex justify-center px-[6px] mb-1 md:mb-2 lg:mb-3">
       <div className="container flex justify-between items-center">
         <h2>{props.title}</h2>
         <Link href={`/${props.path}`} className='flex items-center text-sm md:text-base'>
