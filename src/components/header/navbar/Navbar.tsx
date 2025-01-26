@@ -2,18 +2,19 @@ import './Navbar.scss';
 import "flag-icon-css/css/flag-icon.min.css";
 import { Link } from '../../../i18n/routing';
 import NavList from './NavList';
-import Sidebar from './Sidebar';
+import Tabbar from './Tabbar';
 
 type NavbarParams = {
   search: string;
   login: string;
   wishlist: string;
   cart: string;
+  home: string;
 }
 
-const Navbar = ({ search, login, wishlist, cart }: NavbarParams) => {
+const Navbar = ({ search, login, wishlist, cart, home }: NavbarParams) => {
   return (
-    <nav className='navbar flex justify-center py-1 md:py-[10px] px-1'>
+    <nav className='navbar flex justify-center py-1 md:py-[10px] px-2 md:px-1'>
       <div className="container flex justify-between items-center gap-1 sm:gap-2 md:gap-4">
         <Link href={'/'}><Logo /></Link>
         <div className="search flex justify-between items-center px-1 sm:px-3 flex-grow gap-2">
@@ -24,7 +25,7 @@ const Navbar = ({ search, login, wishlist, cart }: NavbarParams) => {
           <SearchIcon />
         </div>
         <NavList login={login} wishlist={wishlist} cart={cart} />
-        <Sidebar login={login} wishlist={wishlist} cart={cart} />
+        <Tabbar home={home} login={login} wishlist={wishlist} cart={cart} />
       </div>
     </nav >
   )

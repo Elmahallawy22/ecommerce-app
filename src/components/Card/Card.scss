@@ -1,0 +1,90 @@
+.card {
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  width: 232px;
+  height: 433px;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+
+  .card-img {
+    width: 232px;
+    height: 292px;
+  }
+
+  .heart,
+  .add {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #a5a5a5;
+  }
+
+  .heart {
+    top: 8px;
+  }
+
+  .add {
+    top: 50px;
+  }
+
+  .card-info {
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 12px;
+      color: #212529;
+    }
+
+    h4,
+    p {
+      max-width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .price {
+      font-weight: 700;
+      font-size: 20px;
+      color: #2da5f3;
+
+      span {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+
+    .rates {
+      img {
+        width: 16px;
+        height: 16px;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 12px;
+        color: #a5a5a5;
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .card {
+    height: 323px;
+
+    .card-img {
+      height: 200px;
+    }
+  }
+}

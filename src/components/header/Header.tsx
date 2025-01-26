@@ -11,11 +11,12 @@ const Header = () => {
   return (
     <header className='header'>
       <NavbarLng offer={t('offer')} />
-        <Navbar
+        <Navbar 
           search={t('search')}
           login={t('login')}
           wishlist={t('wishlist')}
           cart={t('cart')}
+          home={t('homely')}
         />
       <NavCategories />
     </header>
