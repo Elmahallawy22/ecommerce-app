@@ -17,8 +17,8 @@ const Categories = () => {
 
   const categoriesList: { id: number, item: string, image: StaticImageData }[] =
     [
-      { id: 1, item: "women", image: Men },
-      { id: 2, item: "men", image: Women },
+      { id: 1, item: "men", image: Men },
+      { id: 2, item: "women", image: Women },
       { id: 3, item: "children", image: Children },
       { id: 4, item: "beauty", image: Beauty },
       { id: 5, item: "electronics", image: Electonics },

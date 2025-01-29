@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import "./SectionTitele.scss";
+import "./SectionTitle.scss";
 import { Link } from '../../../i18n/routing';
 import Image from 'next/image';
 import ArrowR from "../assets/ArrowR.png";
@@ -26,7 +26,7 @@ const SectionTitele = (props: SectionTitelePrams) => {
         <h2>{props.title}</h2>
         <Link href={`/${props.path}`} className='flex items-center text-sm md:text-base'>
           {lngValue === "rtl" ?
-            <>
+            <>  
               شاهد المزيد
               <Image src={ArrowR} alt="arrow-right" />
             </>

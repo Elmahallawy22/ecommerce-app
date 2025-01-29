@@ -11,18 +11,18 @@ import ActiveAddIcon from "./assets/ActivePlus.png";
 import { useTranslations } from 'next-intl';
 
 type CardParams = {
-  id?: number, price: number; rate: number; quntity: number;
   image: string; name: string; description: string;
+  price: number; rate: number; quntity: number;
 }
 
-const Card = ({ id, image, name, description, price, rate, quntity }: CardParams) => {
+const Card = ({ image, name, description, price, rate, quntity }: CardParams) => {
   const currentPath = usePathname();
   const [loved, setLoved] = useState<boolean>(false);
   const [added, setAdded] = useState<boolean>(false);
   const t = useTranslations('Card');
 
   return (
-    <div className="card" key={id}>
+    <div className="card">
       <Image
         src={image}
         width={232}

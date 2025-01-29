@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Newly.scss";
-import SectionTitele from '../SectionTitele/SectionTitele';
+import SectionTitle from '../SectionTitle/SectionTitle';
 import NewBrands from "../assets/BrandsNew.png";
 import NewWomen from "../assets/WomenNew.png";
 import NewMobiles from "../assets/MobilesNew.png";
@@ -11,7 +11,7 @@ const Newly = () => {
   const t = useTranslations("NewArrival")
   return (
     <div className='newly'>
-      <SectionTitele title={t('title')} path='new-arrival' />
+      <SectionTitle title={t('title')} path='new-arrival' />
       <div className="images flex">
         <Image src={NewBrands} alt='new-brands' className='quarter' />
         <Image src={NewWomen} alt='new-women' className='half' />

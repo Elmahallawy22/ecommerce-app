@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import SectionTitele from '../SectionTitele/SectionTitele';
+import SectionTitle from '../SectionTitle/SectionTitle';
 import Card from '../../Card/Card';
 
 const FlashStyle = () => {
@@ -31,8 +31,8 @@ const FlashStyle = () => {
   }, []);
 
   return (
-    <div className='flash-style '>
-      <SectionTitele title={t('title')} path="flash-style" />
+    <div className='flash-style'>
+      <SectionTitle title={t('title')} path="flash-style" />
       <div className="flex overflow-x-hidden">
         <Image src={SidebarImg} alt='sidebar-img' className='hidden lg:block w-1/4' />
         <div className="bg-[#f5f5f5] flex-grow w-1/2 px-2 md:px-4 xl:px-6">
@@ -68,7 +68,6 @@ const FlashStyle = () => {
                       return (
                         <div key={item.id}>
                           <Card
-                            id={item.id}
                             image={item.thumbnail}
                             name={item.title}
                             description={item.description}
@@ -85,7 +84,6 @@ const FlashStyle = () => {
                       return (
                         <div key={item.id}>
                           <Card
-                            id={item.id}
                             image={item.thumbnail}
                             name={item.title}
                             description={item.description}

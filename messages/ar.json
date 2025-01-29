@@ -38,5 +38,11 @@
   },
   "Card": {
     "currency": "ج.م"
+  },
+  "DistinctiveItems": {
+    "title": "الاصناف المميزه"
+  },
+  "ShopAcrossCategories": {
+    "title": "تسوق عبر الفئات"
   }
 }

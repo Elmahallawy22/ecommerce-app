@@ -38,5 +38,11 @@
   },
   "Card": {
     "currency": "L.E"
+  },
+  "DistinctiveItems": {
+    "title": "Distinctive Items"
+  },
+  "ShopAcrossCategories": {
+    "title": "Shop Across Categories"
   }
 }

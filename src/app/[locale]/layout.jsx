@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 // import { notFound } from 'next/navigation';
 // import { routing } from '../../i18n/routing';
 import Header from "../../components/header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default async function LocaleLayout({
   children,
@@ -18,12 +19,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html >
-      <body>
+    <html>
+      <body className="py-20 md:py-0">
         <Header />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Footer />
       </body>
     </html>
   );
