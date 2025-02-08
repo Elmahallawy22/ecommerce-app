@@ -44,5 +44,39 @@
   },
   "ShopAcrossCategories": {
     "title": "Shop Across Categories"
+  },
+  "Footer": {
+    "who_we": "Who are we?",
+    "be_selller": "Be our seller",
+    "contacts": "Contacts",
+    "terms": "Terms and Conditions",
+    "policies": "Policies",
+    "subscribe_news": "Subscribe to the news",
+    "enter_email": "Enter your email",
+    "subscribe": "Subscribe",
+    "shopping": "Shopping through the application",
+    "follow_us": "Follow us",
+    "foot": "Wolf | Collection rights reserved"
+  },
+  "FooterPage": {
+    "item1": "Welcome to Wolf!",
+    "item2": "We are an innovative technology company that aims to advance and innovate in the world of technology. We are committed to providing innovative and pioneering solutions in areas such as artificial intelligence, mobile application development, cloud computing, and information security.",
+    "item3": "At Wolf, we ensure to provide the highest levels of quality and performance to our customers. We believe that technology should be a driving force for positive change and improving lives, and therefore we strive to develop products and services that meet the needs of our customers and exceed their expectations.",
+    "item4": "We have an outstanding team of passionate and experienced engineers and developers who work hard to achieve innovation and technical excellence. We rely on collaboration, innovation and transparency in our work, and aim to build long-term relationships with our customers and success partners.",
+    "item5": "We also strive to contribute to the community and achieve positive social impact. We support social initiatives and encourage our team to participate in volunteer activities and environmental initiatives.",
+    "item6": "We are proud of what we have achieved so far, but we are also committed to continuous growth and development. We believe that continuous learning and innovation are the key to success in the rapidly changing world of technology.",
+    "item7": "Thank you for visiting our 'About Us' page. If you have any questions or inquiries, please do not hesitate to contact us. We are ready to collaborate and help you achieve your technology goals."
+  },
+  "WhoAreWe": {
+    "title": "Who We Are..."
+  },
+  "BeSeller":{
+    "title" : "Be Our Seller..."
+  },
+  "TermsAndConditions": {
+    "title": "Terms And Conditions..."
+  },
+  "Policies": {
+    "title": "Policies..."
   }
 }

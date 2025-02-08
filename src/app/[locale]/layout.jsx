@@ -20,7 +20,7 @@ export default async function LocaleLayout({
 
   return (
     <html>
-      <body className="py-20 md:py-0">
+      <body className="pb-20 md:pb-0 flex flex-col justify-end min-h-full">
         <Header />
         <NextIntlClientProvider messages={messages}>
           {children}
